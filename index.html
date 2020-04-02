@@ -8,21 +8,6 @@
         <p><h3>This is a new paragraph</h3></p>
         <img src="" id="rainbow" width="480">
 <script src="app.js"></script>
-<script>
-    console.log('About to fetch a rainbow!');
-    fetch('rainbow.jpeg')
-    .then(response=> {
-        console.log(response);
-        return response.blob();
-    })
-    .then(blob => {
-        console.log(blob);
-        document.getElementById('rainbow').src = URL.createObjectURL(blob);
-    })
-    .catch(error => {
-        console.log('error');
-        console.error(error);
-    });
-</script>
+
     </body>
 </html>
