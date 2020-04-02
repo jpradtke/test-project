@@ -18,4 +18,4 @@ console.log("connected!") // show that script is included in HTML
 
 getISS();
 
-
+setInterval(getISS, 10000);
